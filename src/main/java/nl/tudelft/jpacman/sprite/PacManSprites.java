@@ -34,7 +34,7 @@ public class PacManSprites extends SpriteStore {
     /**
      * The amount of frames in the pacman animation.
      */
-    private static final int PACMAN_ANIMATION_FRAMES = 4;
+    private static final int ANIMATION_FRAMES = 4;
 
     /**
      * The amount of frames in the pacman dying animation.

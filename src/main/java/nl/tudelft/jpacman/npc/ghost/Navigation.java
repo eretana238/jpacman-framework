@@ -15,9 +15,9 @@ import nl.tudelft.jpacman.board.Unit;
  *
  * @author Jeroen Roosen 
  */
-public final class Navigation {
+public final class NavigationUtils {
 
-    private Navigation() {
+    private NavigationUtils() {
     }
 
     /**

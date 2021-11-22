@@ -7,7 +7,7 @@ import nl.tudelft.jpacman.sprite.Sprite;
  *
  * @author Jeroen Roosen 
  */
-public abstract class Unit {
+public abstract class BoardUnit {
 
     /**
      * The square this unit is currently occupying.
