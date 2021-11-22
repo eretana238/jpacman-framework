@@ -101,7 +101,8 @@ public abstract class BoardUnit {
      *         not occupying any square.
      */
     protected boolean invariant() {
-        return square == null || square.getOccupants().contains(this);
+        List<Unit> occumpants = square.getOccupants();
+        return square == null || occumpants.contains(this);
     }
 
     /**

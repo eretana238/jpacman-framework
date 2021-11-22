@@ -183,6 +183,18 @@ public class MapParser {
      * @throws PacmanConfigurationException if map is not OK.
      */
     private void checkMapFormat(List<String> text) {
+        if (!isValidText(text))
+            return;
+        int width = text.get(0).length();
+        for (String line : text) {
+            if (line.length() != width) {
+                throw new PacmanConfigurationException(
+                    "Input text lines are not of equal width.");
+            }
+        }
+    }
+
+    private boolean isValidText(List<String> text) {
         if (text == null) {
             throw new PacmanConfigurationException(
                 "Input text cannot be null.");
@@ -199,13 +211,7 @@ public class MapParser {
             throw new PacmanConfigurationException(
                 "Input text lines cannot be empty.");
         }
-
-        for (String line : text) {
-            if (line.length() != width) {
-                throw new PacmanConfigurationException(
-                    "Input text lines are not of equal width.");
-            }
-        }
+        return true;
     }
 
     /**

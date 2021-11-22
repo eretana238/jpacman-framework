@@ -64,7 +64,8 @@ class BoardPanel extends JPanel {
     @Override
     public void paint(Graphics g) {
         assert g != null;
-        render(game.getLevel().getBoard(), g, getSize());
+        Board board = game.getLevel().getBoard();
+        render(board, g, getSize());
     }
 
     /**
